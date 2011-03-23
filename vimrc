@@ -288,6 +288,11 @@ if !has("gui_running")
    nmap OB j
    nmap OC l
    nmap OD h
+
+   vmap OA k 
+   vmap OB j 
+   vmap OC l 
+   vmap OD h 
 endif
 
 
@@ -297,3 +302,5 @@ let g:CommandTMaxHeight = 15
 
 " --- SuperTab
 let g:SuperTabDefaultCompletionType = "context"
+
+
