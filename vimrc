@@ -16,7 +16,7 @@ set bs=2		" allow backspacing over everything in insert mode
 set history=50		" keep 50 lines of command line history
 set ruler		" show the cursor position all the time
 set autoread		" auto read when file is changed from outside
-
+set mouse=a
 
 filetype on           " Enable filetype detection
 filetype indent on    " Enable filetype-specific indenting
@@ -278,7 +278,7 @@ let g:tex_flavor='latex'
 " --- AutoClose - Inserts matching bracket, paren, brace or quote 
 " fixed the arrow key problems caused by AutoClose
 if !has("gui_running")	
-   set term=linux
+   set term=xterm
    imap OA <ESC>ki
    imap OB <ESC>ji
    imap OC <ESC>li
