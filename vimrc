@@ -279,20 +279,10 @@ let g:tex_flavor='latex'
 " fixed the arrow key problems caused by AutoClose
 if !has("gui_running")	
    set term=xterm
-   imap OA <ESC>ki
-   imap OB <ESC>ji
-   imap OC <ESC>li
-   imap OD <ESC>hi
-
-   nmap OA k
-   nmap OB j
-   nmap OC l
-   nmap OD h
-
-   vmap OA k 
-   vmap OB j 
-   vmap OC l 
-   vmap OD h 
+   noremap <buffer> <silent> <C-[>OA <UP>
+   noremap <buffer> <silent> <C-[>OB <DOWN>
+   noremap <buffer> <silent> <C-[>OC <RIGHT>
+   noremap <buffer> <silent> <C-[>OD <LEFT>
 endif
 
 " --- NERDTree
