@@ -295,7 +295,9 @@ if !has("gui_running")
    vmap OD h 
 endif
 
-
+" --- NERDTree
+let NERDTreeWinPos="0"
+map <F12> :NERDTreeToggle <CR>
 
 " --- Command-T
 let g:CommandTMaxHeight = 15
